@@ -1,0 +1,19 @@
+
+/* Universal Reset */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 10px; // Defines what 1 rem is
+}
+
+body {
+    padding: 3rem;
+    box-sizing: border-box;
+}

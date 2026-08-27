@@ -1,0 +1,26 @@
+{
+  "name": "css-natours",
+  "version": "1.0.0",
+  "description": "A small Natours-inspired landing page built with HTML and CSS.",
+  "homepage": "https://github.com/dmjendor/css-natours#readme",
+  "bugs": {
+    "url": "https://github.com/dmjendor/css-natours/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmjendor/css-natours.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "dependencies": {
+    "jquery": "^4.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.103.1"
+  }
+}
