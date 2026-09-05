@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 .btn {
     margin-top: 1rem;
 
@@ -15,7 +17,7 @@
 
     &:hover {
         transform: translateY(-.5rem);
-        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+        box-shadow: 0 1rem 2rem rgba(variables.$color-black,.2);
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
             opacity: 0;
@@ -24,7 +26,7 @@
 
     &:active {
         transform: translateY(-.2rem);
-            box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+            box-shadow: 0 .5rem 1rem rgba(variables.$color-black,.2);
     }
 
     &::after {
@@ -45,10 +47,10 @@
     }
 
     &--white {
-        background-color: $color-white;
-        color: $color-grey-dark;
+        background-color: variables.$color-white;
+        color: variables.$color-grey-dark;
         &::after {
-            background-color: $color-white;
+            background-color: variables.$color-white;
         }
     }
 }
@@ -57,24 +59,24 @@
 
 
     &:link, &:visited {
-        font-size: $default-font-size;
-        color: $color-primary;
+        font-size: variables.$default-font-size;
+        color: variables.$color-primary;
         display: inline-block;
         text-decoration: none;
-        border-bottom: 1px solid $color-primary;
+        border-bottom: 1px solid variables.$color-primary;
         padding: 3px;
         transition: all .2s;
     }
 
     &:hover {
-        background-color: $color-primary;
-        color: $color-white;
-        box-shadow: 0 1rem 2rem rgba($color-black,.15);
+        background-color: variables.$color-primary;
+        color: variables.$color-white;
+        box-shadow: 0 1rem 2rem rgba(variables.$color-black,.15);
         transform: translateY(-2px);
     }
 
     &:active {
-        box-shadow: 0 1rem 1rem rgba($color-black,.15);
+        box-shadow: 0 1rem 1rem rgba(variables.$color-black,.15);
         transform: translateY();
     }
 }

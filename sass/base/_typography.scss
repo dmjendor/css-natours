@@ -1,14 +1,16 @@
+@use "../abstracts/variables";
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     /* font-size: 16px; */
-    font-size: $default-font-size;
+    font-size: variables.$default-font-size;
     line-height: 1.7;
-    color: $color-grey-dark;
+    color: variables.$color-grey-dark;
 }
 
 .heading-primary {
-    color: $color-white;
+    color: variables.$color-white;
     text-transform: uppercase;
     
     backface-visibility: hidden;
@@ -32,13 +34,13 @@ body {
 }
 
 .heading-tertiary {
-    font-size: $default-font-size;
+    font-size: variables.$default-font-size;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .paragraph {
-    font-size: $default-font-size;
+    font-size: variables.$default-font-size;
 
     &:not(last-child){
         margin-bottom: 3rem;
