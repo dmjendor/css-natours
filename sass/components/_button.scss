@@ -53,6 +53,14 @@
             background-color: variables.$color-white;
         }
     }
+
+    &--green {
+        background-color: variables.$color-primary;
+        color: variables.$color-white;
+        &::after {
+            background-color: variables.$color-primary;
+        }
+    }
 }
 
 .btn-text {
