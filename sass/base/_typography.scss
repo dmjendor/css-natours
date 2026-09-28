@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 body {
   font-family: "Lato", sans-serif;
@@ -22,6 +23,11 @@ body {
     letter-spacing: 3.5rem;
     animation: moveinleft 1s;
     animation-timing-function: ease-in;
+
+    @include mixins.respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 
   &--sub {
@@ -30,6 +36,10 @@ body {
     font-weight: 700;
     letter-spacing: 1.7rem;
     animation: moveinright 1s ease-out;
+
+    @include mixins.respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -48,6 +58,13 @@ body {
   transition: all 0.2s;
   letter-spacing: 2px;
 
+  @include mixins.respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include mixins.respond(phone) {
+    font-size: 2.5rem;
+  }
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(variables.$color-black, 0.2);

@@ -1,19 +1,35 @@
-
+@use "../abstracts/mixins";
 /* Universal Reset */
 
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 10px; // Defines what 1 rem is
+  font-size: 62.5%; // 1 rem is 10px
+
+  @include mixins.respond(big-desk) {
+    font-size: 75%; // 1rem = 12px, 12/16
+  }
+
+  @include mixins.respond(tab-land) {
+    font-size: 56.25%; // 1 rem is 9px, 9/16
+  }
+
+  @include mixins.respond(tab-port) {
+    font-size: 50%; // 1 rem is 8px, 8/16
+  }
 }
 
 body {
-    padding: 3rem;
-    box-sizing: border-box;
+  padding: 3rem;
+  box-sizing: border-box;
+
+  @include mixins.respond(tab-port) {
+    padding: 0;
+  }
 }

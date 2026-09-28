@@ -262,7 +262,6 @@
                     <li>Ddifficulty: Hard</li>
                   </ul>
                 </div>
-                iv>
               </div>
               <div class="card__side card__side--back card__side--back--3">
                 <div class="card__cta">
@@ -508,6 +507,21 @@
                 <div class="col-3-of-4">Col 3 of 4</div>
             </div>
         </section>
+
+
+
+  @use "../abstracts/mixins";
+  @include mixins.respond(big-desk) {
+  }
+  @include mixins.respond(tab-land) {
+  }
+  
+  @include mixins.respond(tab-port) {
+  }
+    
+  @include mixins.respond(phone) {
+  }
+
         -->
   </body>
 </html>
