@@ -17,6 +17,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: variables.$default-border-radius;
     box-shadow: 0 1.5rem 4rem rgba(variables.$color-black, 0.15);
